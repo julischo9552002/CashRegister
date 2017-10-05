@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.titleLabel = new System.Windows.Forms.Label();
-            this.burgersLabel = new System.Windows.Forms.Label();
+            this.BurgerLabel = new System.Windows.Forms.Label();
             this.friesLabel = new System.Windows.Forms.Label();
             this.drinksLabel = new System.Windows.Forms.Label();
             this.burgerInput = new System.Windows.Forms.TextBox();
@@ -44,32 +44,33 @@
             this.totalOutput = new System.Windows.Forms.Label();
             this.blackLineLable = new System.Windows.Forms.Label();
             this.tenderedLable = new System.Windows.Forms.Label();
-            this.tenderedOutput = new System.Windows.Forms.TextBox();
+            this.tenderedInput = new System.Windows.Forms.TextBox();
             this.calculateChangeButton = new System.Windows.Forms.Button();
             this.changeLabel = new System.Windows.Forms.Label();
             this.changeOutput = new System.Windows.Forms.Label();
             this.printReceiptButton = new System.Windows.Forms.Button();
+            this.newordnerButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // titleLabel
             // 
-            this.titleLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.titleLabel.BackColor = System.Drawing.Color.Red;
             this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.Location = new System.Drawing.Point(-4, -2);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(829, 94);
+            this.titleLabel.Size = new System.Drawing.Size(901, 94);
             this.titleLabel.TabIndex = 0;
-            this.titleLabel.Text = "  Burger Town";
+            this.titleLabel.Text = "  McDonalds";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // burgersLabel
+            // BurgerLabel
             // 
-            this.burgersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.burgersLabel.Location = new System.Drawing.Point(22, 138);
-            this.burgersLabel.Name = "burgersLabel";
-            this.burgersLabel.Size = new System.Drawing.Size(219, 34);
-            this.burgersLabel.TabIndex = 1;
-            this.burgersLabel.Text = "Number of Burgers";
+            this.BurgerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BurgerLabel.Location = new System.Drawing.Point(22, 138);
+            this.BurgerLabel.Name = "BurgerLabel";
+            this.BurgerLabel.Size = new System.Drawing.Size(219, 34);
+            this.BurgerLabel.TabIndex = 1;
+            this.BurgerLabel.Text = "Number of Burger";
             // 
             // friesLabel
             // 
@@ -125,6 +126,7 @@
             this.calculateButton.TabIndex = 8;
             this.calculateButton.Text = "Calculate Totals";
             this.calculateButton.UseVisualStyleBackColor = false;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // subTotalLabel
             // 
@@ -194,13 +196,13 @@
             this.tenderedLable.TabIndex = 16;
             this.tenderedLable.Text = "Tendered";
             // 
-            // tenderedOutput
+            // tenderedInput
             // 
-            this.tenderedOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tenderedOutput.Location = new System.Drawing.Point(274, 622);
-            this.tenderedOutput.Name = "tenderedOutput";
-            this.tenderedOutput.Size = new System.Drawing.Size(87, 30);
-            this.tenderedOutput.TabIndex = 17;
+            this.tenderedInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tenderedInput.Location = new System.Drawing.Point(274, 622);
+            this.tenderedInput.Name = "tenderedInput";
+            this.tenderedInput.Size = new System.Drawing.Size(87, 30);
+            this.tenderedInput.TabIndex = 17;
             // 
             // calculateChangeButton
             // 
@@ -214,6 +216,7 @@
             this.calculateChangeButton.TabIndex = 18;
             this.calculateChangeButton.Text = "Calculate Change";
             this.calculateChangeButton.UseVisualStyleBackColor = false;
+            this.calculateChangeButton.Click += new System.EventHandler(this.calculateChangeButton_Click);
             // 
             // changeLabel
             // 
@@ -244,18 +247,33 @@
             this.printReceiptButton.TabIndex = 21;
             this.printReceiptButton.Text = "Print Receipts";
             this.printReceiptButton.UseVisualStyleBackColor = false;
+            this.printReceiptButton.Click += new System.EventHandler(this.printReceiptButton_Click);
+            // 
+            // newordnerButton
+            // 
+            this.newordnerButton.BackColor = System.Drawing.Color.Silver;
+            this.newordnerButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.newordnerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newordnerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newordnerButton.Location = new System.Drawing.Point(493, 806);
+            this.newordnerButton.Name = "newordnerButton";
+            this.newordnerButton.Size = new System.Drawing.Size(252, 62);
+            this.newordnerButton.TabIndex = 22;
+            this.newordnerButton.Text = "New Order";
+            this.newordnerButton.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(812, 900);
+            this.BackColor = System.Drawing.Color.Gold;
+            this.ClientSize = new System.Drawing.Size(878, 894);
+            this.Controls.Add(this.newordnerButton);
             this.Controls.Add(this.printReceiptButton);
             this.Controls.Add(this.changeOutput);
             this.Controls.Add(this.changeLabel);
             this.Controls.Add(this.calculateChangeButton);
-            this.Controls.Add(this.tenderedOutput);
+            this.Controls.Add(this.tenderedInput);
             this.Controls.Add(this.tenderedLable);
             this.Controls.Add(this.blackLineLable);
             this.Controls.Add(this.totalOutput);
@@ -270,10 +288,11 @@
             this.Controls.Add(this.burgerInput);
             this.Controls.Add(this.drinksLabel);
             this.Controls.Add(this.friesLabel);
-            this.Controls.Add(this.burgersLabel);
+            this.Controls.Add(this.BurgerLabel);
             this.Controls.Add(this.titleLabel);
             this.Name = "Form1";
             this.Text = "Cash Register";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,7 +301,7 @@
         #endregion
 
         private System.Windows.Forms.Label titleLabel;
-        private System.Windows.Forms.Label burgersLabel;
+        private System.Windows.Forms.Label BurgerLabel;
         private System.Windows.Forms.Label friesLabel;
         private System.Windows.Forms.Label drinksLabel;
         private System.Windows.Forms.TextBox burgerInput;
@@ -297,11 +316,12 @@
         private System.Windows.Forms.Label totalOutput;
         private System.Windows.Forms.Label blackLineLable;
         private System.Windows.Forms.Label tenderedLable;
-        private System.Windows.Forms.TextBox tenderedOutput;
+        private System.Windows.Forms.TextBox tenderedInput;
         private System.Windows.Forms.Button calculateChangeButton;
         private System.Windows.Forms.Label changeLabel;
         private System.Windows.Forms.Label changeOutput;
         private System.Windows.Forms.Button printReceiptButton;
+        private System.Windows.Forms.Button newordnerButton;
     }
 }
 
