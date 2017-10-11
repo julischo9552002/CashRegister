@@ -50,6 +50,8 @@
             this.changeOutput = new System.Windows.Forms.Label();
             this.printReceiptButton = new System.Windows.Forms.Button();
             this.newordnerButton = new System.Windows.Forms.Button();
+            this.errorLabel = new System.Windows.Forms.Label();
+            this.errorLabel2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -58,9 +60,9 @@
             this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.Location = new System.Drawing.Point(-4, -2);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(901, 94);
+            this.titleLabel.Size = new System.Drawing.Size(901, 99);
             this.titleLabel.TabIndex = 0;
-            this.titleLabel.Text = "  McDonalds";
+            this.titleLabel.Text = "  McDonald\'s in Deutschland";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BurgerLabel
@@ -68,50 +70,50 @@
             this.BurgerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BurgerLabel.Location = new System.Drawing.Point(22, 138);
             this.BurgerLabel.Name = "BurgerLabel";
-            this.BurgerLabel.Size = new System.Drawing.Size(219, 34);
+            this.BurgerLabel.Size = new System.Drawing.Size(337, 34);
             this.BurgerLabel.TabIndex = 1;
-            this.BurgerLabel.Text = "Number of Burger";
+            this.BurgerLabel.Text = "Anzahl der Frühstücksburger";
             // 
             // friesLabel
             // 
             this.friesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.friesLabel.Location = new System.Drawing.Point(22, 208);
             this.friesLabel.Name = "friesLabel";
-            this.friesLabel.Size = new System.Drawing.Size(218, 34);
+            this.friesLabel.Size = new System.Drawing.Size(309, 34);
             this.friesLabel.TabIndex = 2;
-            this.friesLabel.Text = "Number of Fries";
+            this.friesLabel.Text = "Anzahl der Gitterkartoffeln";
             // 
             // drinksLabel
             // 
             this.drinksLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drinksLabel.Location = new System.Drawing.Point(22, 275);
             this.drinksLabel.Name = "drinksLabel";
-            this.drinksLabel.Size = new System.Drawing.Size(231, 34);
+            this.drinksLabel.Size = new System.Drawing.Size(237, 34);
             this.drinksLabel.TabIndex = 3;
-            this.drinksLabel.Text = "Number of Drinks";
+            this.drinksLabel.Text = "Anzahl der Getränke";
             // 
             // burgerInput
             // 
             this.burgerInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.burgerInput.Location = new System.Drawing.Point(274, 138);
+            this.burgerInput.Location = new System.Drawing.Point(345, 138);
             this.burgerInput.Name = "burgerInput";
-            this.burgerInput.Size = new System.Drawing.Size(85, 30);
+            this.burgerInput.Size = new System.Drawing.Size(57, 30);
             this.burgerInput.TabIndex = 1;
             // 
             // friesInput
             // 
             this.friesInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.friesInput.Location = new System.Drawing.Point(274, 208);
+            this.friesInput.Location = new System.Drawing.Point(345, 208);
             this.friesInput.Name = "friesInput";
-            this.friesInput.Size = new System.Drawing.Size(85, 30);
+            this.friesInput.Size = new System.Drawing.Size(57, 30);
             this.friesInput.TabIndex = 5;
             // 
             // drinksInput
             // 
             this.drinksInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.drinksInput.Location = new System.Drawing.Point(274, 275);
+            this.drinksInput.Location = new System.Drawing.Point(345, 275);
             this.drinksInput.Name = "drinksInput";
-            this.drinksInput.Size = new System.Drawing.Size(85, 30);
+            this.drinksInput.Size = new System.Drawing.Size(57, 30);
             this.drinksInput.TabIndex = 6;
             // 
             // calculateButton
@@ -124,7 +126,7 @@
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(252, 60);
             this.calculateButton.TabIndex = 8;
-            this.calculateButton.Text = "Calculate Totals";
+            this.calculateButton.Text = "Berechne Netto";
             this.calculateButton.UseVisualStyleBackColor = false;
             this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
@@ -135,25 +137,25 @@
             this.subTotalLabel.Name = "subTotalLabel";
             this.subTotalLabel.Size = new System.Drawing.Size(142, 34);
             this.subTotalLabel.TabIndex = 9;
-            this.subTotalLabel.Text = "Sub Total";
+            this.subTotalLabel.Text = "Netto";
             // 
             // taxLabel
             // 
             this.taxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.taxLabel.Location = new System.Drawing.Point(23, 475);
             this.taxLabel.Name = "taxLabel";
-            this.taxLabel.Size = new System.Drawing.Size(140, 34);
+            this.taxLabel.Size = new System.Drawing.Size(142, 34);
             this.taxLabel.TabIndex = 10;
-            this.taxLabel.Text = "Tax";
+            this.taxLabel.Text = "Steuern";
             // 
             // totalLabel
             // 
             this.totalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalLabel.Location = new System.Drawing.Point(23, 523);
             this.totalLabel.Name = "totalLabel";
-            this.totalLabel.Size = new System.Drawing.Size(122, 34);
+            this.totalLabel.Size = new System.Drawing.Size(161, 34);
             this.totalLabel.TabIndex = 11;
-            this.totalLabel.Text = "Total";
+            this.totalLabel.Text = "Brutto";
             // 
             // subTotalOutput
             // 
@@ -182,9 +184,9 @@
             // blackLineLable
             // 
             this.blackLineLable.BackColor = System.Drawing.Color.Black;
-            this.blackLineLable.Location = new System.Drawing.Point(23, 581);
+            this.blackLineLable.Location = new System.Drawing.Point(23, 574);
             this.blackLineLable.Name = "blackLineLable";
-            this.blackLineLable.Size = new System.Drawing.Size(372, 16);
+            this.blackLineLable.Size = new System.Drawing.Size(379, 12);
             this.blackLineLable.TabIndex = 15;
             // 
             // tenderedLable
@@ -194,14 +196,14 @@
             this.tenderedLable.Name = "tenderedLable";
             this.tenderedLable.Size = new System.Drawing.Size(136, 34);
             this.tenderedLable.TabIndex = 16;
-            this.tenderedLable.Text = "Tendered";
+            this.tenderedLable.Text = "Bar";
             // 
             // tenderedInput
             // 
             this.tenderedInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tenderedInput.Location = new System.Drawing.Point(274, 622);
+            this.tenderedInput.Location = new System.Drawing.Point(343, 622);
             this.tenderedInput.Name = "tenderedInput";
-            this.tenderedInput.Size = new System.Drawing.Size(87, 30);
+            this.tenderedInput.Size = new System.Drawing.Size(59, 30);
             this.tenderedInput.TabIndex = 17;
             // 
             // calculateChangeButton
@@ -209,12 +211,12 @@
             this.calculateChangeButton.BackColor = System.Drawing.Color.Silver;
             this.calculateChangeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.calculateChangeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.calculateChangeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculateChangeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
             this.calculateChangeButton.Location = new System.Drawing.Point(79, 681);
             this.calculateChangeButton.Name = "calculateChangeButton";
-            this.calculateChangeButton.Size = new System.Drawing.Size(252, 60);
+            this.calculateChangeButton.Size = new System.Drawing.Size(252, 65);
             this.calculateChangeButton.TabIndex = 18;
-            this.calculateChangeButton.Text = "Calculate Change";
+            this.calculateChangeButton.Text = "Berechne Wechselgeld";
             this.calculateChangeButton.UseVisualStyleBackColor = false;
             this.calculateChangeButton.Click += new System.EventHandler(this.calculateChangeButton_Click);
             // 
@@ -223,9 +225,9 @@
             this.changeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changeLabel.Location = new System.Drawing.Point(23, 761);
             this.changeLabel.Name = "changeLabel";
-            this.changeLabel.Size = new System.Drawing.Size(138, 34);
+            this.changeLabel.Size = new System.Drawing.Size(161, 34);
             this.changeLabel.TabIndex = 19;
-            this.changeLabel.Text = "Change";
+            this.changeLabel.Text = "Wechselgeld";
             // 
             // changeOutput
             // 
@@ -245,7 +247,7 @@
             this.printReceiptButton.Name = "printReceiptButton";
             this.printReceiptButton.Size = new System.Drawing.Size(252, 62);
             this.printReceiptButton.TabIndex = 21;
-            this.printReceiptButton.Text = "Print Receipts";
+            this.printReceiptButton.Text = "Drucke Quittung";
             this.printReceiptButton.UseVisualStyleBackColor = false;
             this.printReceiptButton.Click += new System.EventHandler(this.printReceiptButton_Click);
             // 
@@ -259,8 +261,26 @@
             this.newordnerButton.Name = "newordnerButton";
             this.newordnerButton.Size = new System.Drawing.Size(252, 62);
             this.newordnerButton.TabIndex = 22;
-            this.newordnerButton.Text = "New Order";
+            this.newordnerButton.Text = "Neue Bestellung";
             this.newordnerButton.UseVisualStyleBackColor = false;
+            this.newordnerButton.Click += new System.EventHandler(this.newordnerButton_Click);
+            // 
+            // errorLabel
+            // 
+            this.errorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorLabel.Location = new System.Drawing.Point(419, 338);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(432, 87);
+            this.errorLabel.TabIndex = 23;
+            this.errorLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // errorLabel2
+            // 
+            this.errorLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorLabel2.Location = new System.Drawing.Point(419, 681);
+            this.errorLabel2.Name = "errorLabel2";
+            this.errorLabel2.Size = new System.Drawing.Size(428, 87);
+            this.errorLabel2.TabIndex = 24;
             // 
             // Form1
             // 
@@ -268,6 +288,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(878, 894);
+            this.Controls.Add(this.errorLabel2);
+            this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.newordnerButton);
             this.Controls.Add(this.printReceiptButton);
             this.Controls.Add(this.changeOutput);
@@ -322,6 +344,8 @@
         private System.Windows.Forms.Label changeOutput;
         private System.Windows.Forms.Button printReceiptButton;
         private System.Windows.Forms.Button newordnerButton;
+        private System.Windows.Forms.Label errorLabel;
+        private System.Windows.Forms.Label errorLabel2;
     }
 }
 
