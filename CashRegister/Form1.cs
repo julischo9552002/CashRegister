@@ -101,7 +101,10 @@ namespace CashRegister
             //writingPens
             Font bFont = new Font("Consolas", 10, FontStyle.Regular);
             SolidBrush bBrush = new SolidBrush(Color.Black);
-            
+
+            Font tiFont = new Font("Consolas", 12, FontStyle.Regular);
+            SolidBrush tiBrush = new SolidBrush(Color.Black);
+
             //SquarePens
             Pen linePen = new Pen(Color.Black, 4);
             SolidBrush gBrush = new SolidBrush(Color.Gray);
@@ -122,7 +125,7 @@ namespace CashRegister
 
             fg.FillRectangle(wBrush, 282, 122, 266, 15);
 
-            fg.DrawString("McDonald's in Deutschland", bFont, bBrush, 320, 122);
+            fg.DrawString("McDonald's in Deutschland", tiFont, tiBrush, 305, 122);
             Thread.Sleep(time);
 
             fg.FillRectangle(wBrush, 282, 137, 266, 15);
