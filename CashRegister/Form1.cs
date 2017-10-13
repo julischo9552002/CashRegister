@@ -11,7 +11,7 @@ using System.Threading;
 using System.Media;
 
 namespace CashRegister
-    //Julia Scholz, 11th october 2017, cashregister for McDonald's
+    //Julia Scholz, 12th october 2017, cashregister for McDonald's in Germany
 {
     public partial class Form1 : Form
     {
@@ -24,15 +24,10 @@ namespace CashRegister
         int totalBurger, totalFries, totalDrinks;
         
         double totalBP, totalFP, totalDP, subTotalCost, totalTax, totalCost, tendered, changeDue;
-
-        //Sound
-        SoundPlayer receipt = new SoundPlayer(Properties.Resources.kitchen_ticket_printer_sound);
-
+        
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
-
         private void calculateButton_Click(object sender, EventArgs e)
         {
             try
@@ -74,11 +69,11 @@ namespace CashRegister
                 //conversions
                 tendered = Convert.ToInt16(tenderedInput.Text); 
 
-            //calculations
-            changeDue = tendered - totalCost;
+                //calculations
+                changeDue = tendered - totalCost;
 
-            //Output Messages
-            changeOutput.Text = changeDue.ToString("0.00") + " €";
+                //Output Messages
+                changeOutput.Text = changeDue.ToString("0.00") + " €";
             }
             catch
             {
@@ -89,6 +84,10 @@ namespace CashRegister
 
         private void printReceiptButton_Click(object sender, EventArgs e)
         {
+            //Sound
+            SoundPlayer receipt = new SoundPlayer(Properties.Resources.kitchen_ticket_printer_sound);
+
+            //sleep variable
             var time = 310;
 
             Graphics fg = this.CreateGraphics();
@@ -115,8 +114,10 @@ namespace CashRegister
             fg.DrawRectangle(linePen, 280, 90, 270, 390);
             Thread.Sleep(500);
 
+            //sound
             receipt.Play();
 
+            //receipt
             fg.FillRectangle(wBrush, 282, 92, 266, 15);
             Thread.Sleep(time);
 
@@ -240,7 +241,7 @@ namespace CashRegister
         {
             Graphics fg = this.CreateGraphics();
 
-            //receipt
+            //empty receipt
             Pen goPen = new Pen(Color.Gold, 4);
             SolidBrush goBrush = new SolidBrush(Color.Gold);
 

@@ -61,6 +61,16 @@ namespace CashRegister.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon icons8_mcdonald_s_100_n4A_icon {
+            get {
+                object obj = ResourceManager.GetObject("icons8_mcdonald_s_100_n4A_icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream kitchen_ticket_printer_sound {
