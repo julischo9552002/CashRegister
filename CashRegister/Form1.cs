@@ -11,7 +11,7 @@ using System.Threading;
 using System.Media;
 
 namespace CashRegister
-    //Julia Scholz, 12th october 2017, cashregister for McDonald's in Germany
+    //Julia Scholz, 13th october 2017, cashregister for McDonald's in Germany
 {
     public partial class Form1 : Form
     {
@@ -35,7 +35,7 @@ namespace CashRegister
                 errorLabel.Visible = false; 
 
                 //conversions
-                 totalBurger = Convert.ToInt16(burgerInput.Text);
+                totalBurger = Convert.ToInt16(burgerInput.Text);
                 totalFries = Convert.ToInt16(friesInput.Text);
                 totalDrinks = Convert.ToInt16(drinksInput.Text);
 
