@@ -83,6 +83,7 @@
     <Content Include="kitchen_ticket_printer_sound.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\McDonaldslogo.png" />
     <None Include="Resources\icons8_mcdonald_s_100_n4A_icon.ico" />
     <None Include="Resources\kitchen_ticket_printer_sound.wav" />
   </ItemGroup>

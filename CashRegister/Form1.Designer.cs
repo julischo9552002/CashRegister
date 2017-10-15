@@ -53,22 +53,24 @@
             this.newordnerButton = new System.Windows.Forms.Button();
             this.errorLabel = new System.Windows.Forms.Label();
             this.errorLabel2 = new System.Windows.Forms.Label();
+            this.logoPicBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.logoPicBox)).BeginInit();
             this.SuspendLayout();
             // 
             // titleLabel
             // 
             this.titleLabel.BackColor = System.Drawing.Color.Red;
-            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.Location = new System.Drawing.Point(-4, -2);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(901, 99);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "  McDonald\'s in Deutschland";
-            this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BurgerLabel
             // 
-            this.BurgerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BurgerLabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BurgerLabel.Location = new System.Drawing.Point(22, 138);
             this.BurgerLabel.Name = "BurgerLabel";
             this.BurgerLabel.Size = new System.Drawing.Size(337, 34);
@@ -77,7 +79,7 @@
             // 
             // friesLabel
             // 
-            this.friesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.friesLabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.friesLabel.Location = new System.Drawing.Point(22, 208);
             this.friesLabel.Name = "friesLabel";
             this.friesLabel.Size = new System.Drawing.Size(309, 34);
@@ -86,7 +88,7 @@
             // 
             // drinksLabel
             // 
-            this.drinksLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drinksLabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drinksLabel.Location = new System.Drawing.Point(22, 275);
             this.drinksLabel.Name = "drinksLabel";
             this.drinksLabel.Size = new System.Drawing.Size(237, 34);
@@ -95,7 +97,7 @@
             // 
             // burgerInput
             // 
-            this.burgerInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.burgerInput.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.burgerInput.Location = new System.Drawing.Point(345, 138);
             this.burgerInput.Name = "burgerInput";
             this.burgerInput.Size = new System.Drawing.Size(57, 30);
@@ -103,37 +105,37 @@
             // 
             // friesInput
             // 
-            this.friesInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.friesInput.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.friesInput.Location = new System.Drawing.Point(345, 208);
             this.friesInput.Name = "friesInput";
             this.friesInput.Size = new System.Drawing.Size(57, 30);
-            this.friesInput.TabIndex = 5;
+            this.friesInput.TabIndex = 2;
             // 
             // drinksInput
             // 
-            this.drinksInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drinksInput.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.drinksInput.Location = new System.Drawing.Point(345, 275);
             this.drinksInput.Name = "drinksInput";
             this.drinksInput.Size = new System.Drawing.Size(57, 30);
-            this.drinksInput.TabIndex = 6;
+            this.drinksInput.TabIndex = 3;
             // 
             // calculateButton
             // 
             this.calculateButton.BackColor = System.Drawing.Color.Silver;
             this.calculateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.calculateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.calculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculateButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calculateButton.Location = new System.Drawing.Point(79, 338);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(252, 60);
-            this.calculateButton.TabIndex = 8;
+            this.calculateButton.TabIndex = 4;
             this.calculateButton.Text = "Berechne Netto";
             this.calculateButton.UseVisualStyleBackColor = false;
             this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // subTotalLabel
             // 
-            this.subTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subTotalLabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subTotalLabel.Location = new System.Drawing.Point(23, 424);
             this.subTotalLabel.Name = "subTotalLabel";
             this.subTotalLabel.Size = new System.Drawing.Size(142, 34);
@@ -142,16 +144,16 @@
             // 
             // taxLabel
             // 
-            this.taxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.taxLabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.taxLabel.Location = new System.Drawing.Point(23, 475);
             this.taxLabel.Name = "taxLabel";
-            this.taxLabel.Size = new System.Drawing.Size(142, 34);
+            this.taxLabel.Size = new System.Drawing.Size(212, 34);
             this.taxLabel.TabIndex = 10;
-            this.taxLabel.Text = "Steuern";
+            this.taxLabel.Text = "Mehrwertsteuer";
             // 
             // totalLabel
             // 
-            this.totalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalLabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalLabel.Location = new System.Drawing.Point(23, 523);
             this.totalLabel.Name = "totalLabel";
             this.totalLabel.Size = new System.Drawing.Size(161, 34);
@@ -160,39 +162,42 @@
             // 
             // subTotalOutput
             // 
-            this.subTotalOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subTotalOutput.Location = new System.Drawing.Point(235, 424);
+            this.subTotalOutput.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subTotalOutput.Location = new System.Drawing.Point(276, 424);
             this.subTotalOutput.Name = "subTotalOutput";
             this.subTotalOutput.Size = new System.Drawing.Size(126, 34);
             this.subTotalOutput.TabIndex = 12;
+            this.subTotalOutput.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // TaxOutput
             // 
-            this.TaxOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TaxOutput.Location = new System.Drawing.Point(235, 475);
+            this.TaxOutput.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TaxOutput.Location = new System.Drawing.Point(276, 475);
             this.TaxOutput.Name = "TaxOutput";
             this.TaxOutput.Size = new System.Drawing.Size(125, 34);
             this.TaxOutput.TabIndex = 13;
+            this.TaxOutput.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // totalOutput
             // 
-            this.totalOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalOutput.Location = new System.Drawing.Point(235, 523);
+            this.totalOutput.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalOutput.Location = new System.Drawing.Point(276, 523);
             this.totalOutput.Name = "totalOutput";
             this.totalOutput.Size = new System.Drawing.Size(126, 34);
             this.totalOutput.TabIndex = 14;
+            this.totalOutput.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // blackLineLable
             // 
             this.blackLineLable.BackColor = System.Drawing.Color.Black;
-            this.blackLineLable.Location = new System.Drawing.Point(23, 574);
+            this.blackLineLable.Location = new System.Drawing.Point(22, 578);
             this.blackLineLable.Name = "blackLineLable";
-            this.blackLineLable.Size = new System.Drawing.Size(379, 12);
+            this.blackLineLable.Size = new System.Drawing.Size(379, 10);
             this.blackLineLable.TabIndex = 15;
             // 
             // tenderedLable
             // 
-            this.tenderedLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tenderedLable.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tenderedLable.Location = new System.Drawing.Point(22, 622);
             this.tenderedLable.Name = "tenderedLable";
             this.tenderedLable.Size = new System.Drawing.Size(136, 34);
@@ -201,29 +206,29 @@
             // 
             // tenderedInput
             // 
-            this.tenderedInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tenderedInput.Font = new System.Drawing.Font("Franklin Gothic Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tenderedInput.Location = new System.Drawing.Point(343, 622);
             this.tenderedInput.Name = "tenderedInput";
             this.tenderedInput.Size = new System.Drawing.Size(59, 30);
-            this.tenderedInput.TabIndex = 17;
+            this.tenderedInput.TabIndex = 5;
             // 
             // calculateChangeButton
             // 
             this.calculateChangeButton.BackColor = System.Drawing.Color.Silver;
             this.calculateChangeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.calculateChangeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.calculateChangeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
+            this.calculateChangeButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calculateChangeButton.Location = new System.Drawing.Point(79, 681);
             this.calculateChangeButton.Name = "calculateChangeButton";
             this.calculateChangeButton.Size = new System.Drawing.Size(252, 65);
-            this.calculateChangeButton.TabIndex = 18;
+            this.calculateChangeButton.TabIndex = 6;
             this.calculateChangeButton.Text = "Berechne Wechselgeld";
             this.calculateChangeButton.UseVisualStyleBackColor = false;
             this.calculateChangeButton.Click += new System.EventHandler(this.calculateChangeButton_Click);
             // 
             // changeLabel
             // 
-            this.changeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changeLabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changeLabel.Location = new System.Drawing.Point(23, 761);
             this.changeLabel.Name = "changeLabel";
             this.changeLabel.Size = new System.Drawing.Size(161, 34);
@@ -233,21 +238,22 @@
             // changeOutput
             // 
             this.changeOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.changeOutput.Location = new System.Drawing.Point(269, 759);
+            this.changeOutput.Location = new System.Drawing.Point(291, 759);
             this.changeOutput.Name = "changeOutput";
             this.changeOutput.Size = new System.Drawing.Size(111, 36);
             this.changeOutput.TabIndex = 20;
+            this.changeOutput.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // printReceiptButton
             // 
             this.printReceiptButton.BackColor = System.Drawing.Color.Silver;
             this.printReceiptButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.printReceiptButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printReceiptButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printReceiptButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.printReceiptButton.Location = new System.Drawing.Point(79, 806);
             this.printReceiptButton.Name = "printReceiptButton";
             this.printReceiptButton.Size = new System.Drawing.Size(252, 62);
-            this.printReceiptButton.TabIndex = 21;
+            this.printReceiptButton.TabIndex = 7;
             this.printReceiptButton.Text = "Drucke Quittung";
             this.printReceiptButton.UseVisualStyleBackColor = false;
             this.printReceiptButton.Click += new System.EventHandler(this.printReceiptButton_Click);
@@ -257,11 +263,11 @@
             this.newordnerButton.BackColor = System.Drawing.Color.Silver;
             this.newordnerButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.newordnerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.newordnerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newordnerButton.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newordnerButton.Location = new System.Drawing.Point(493, 806);
             this.newordnerButton.Name = "newordnerButton";
             this.newordnerButton.Size = new System.Drawing.Size(252, 62);
-            this.newordnerButton.TabIndex = 22;
+            this.newordnerButton.TabIndex = 8;
             this.newordnerButton.Text = "Neue Bestellung";
             this.newordnerButton.UseVisualStyleBackColor = false;
             this.newordnerButton.Click += new System.EventHandler(this.newordnerButton_Click);
@@ -283,12 +289,24 @@
             this.errorLabel2.Size = new System.Drawing.Size(428, 87);
             this.errorLabel2.TabIndex = 24;
             // 
+            // logoPicBox
+            // 
+            this.logoPicBox.BackColor = System.Drawing.Color.Transparent;
+            this.logoPicBox.BackgroundImage = global::CashRegister.Properties.Resources.McDonaldslogo;
+            this.logoPicBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logoPicBox.Location = new System.Drawing.Point(54, 12);
+            this.logoPicBox.Name = "logoPicBox";
+            this.logoPicBox.Size = new System.Drawing.Size(88, 75);
+            this.logoPicBox.TabIndex = 25;
+            this.logoPicBox.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(878, 894);
+            this.Controls.Add(this.logoPicBox);
             this.Controls.Add(this.errorLabel2);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.newordnerButton);
@@ -317,6 +335,7 @@
             this.Name = "Form1";
             this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.logoPicBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -348,6 +367,7 @@
         private System.Windows.Forms.Button newordnerButton;
         private System.Windows.Forms.Label errorLabel;
         private System.Windows.Forms.Label errorLabel2;
+        private System.Windows.Forms.PictureBox logoPicBox;
     }
 }
 

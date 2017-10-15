@@ -126,7 +126,8 @@ namespace CashRegister
 
             fg.FillRectangle(wBrush, 282, 122, 266, 15);
 
-            fg.DrawString("McDonald's in Deutschland", tiFont, tiBrush, 305, 122);
+            fg.DrawString("McDonald's", tiFont, tiBrush, 300, 122);
+            fg.DrawString("ich liebe es", tiFont, tiBrush, 412, 122);
             Thread.Sleep(time);
 
             fg.FillRectangle(wBrush, 282, 137, 266, 15);
@@ -177,7 +178,7 @@ namespace CashRegister
 
             fg.FillRectangle(wBrush, 282, 272, 266, 15);
 
-            fg.DrawString("Steuern", bFont, bBrush, 300, 272);
+            fg.DrawString("Mehrwertsteuer", bFont, bBrush, 300, 272);
             fg.DrawString(totalTax.ToString("0.00") + " €", bFont, bBrush, 475, 272);
             Thread.Sleep(time);
 
@@ -206,6 +207,8 @@ namespace CashRegister
             Thread.Sleep(time);
 
             fg.FillRectangle(wBrush, 282, 362, 266, 15);
+
+            fg.DrawString("Vielen Dank für ihren Besuch!", bFont, bBrush, 310, 362);
             Thread.Sleep(time);
 
             fg.FillRectangle(wBrush, 282, 377, 266, 15);
@@ -218,16 +221,16 @@ namespace CashRegister
 
             fg.FillRectangle(wBrush, 282, 407, 266, 15);
 
-            fg.DrawString("Itterstraße 99 D-40589 Düsseldorf", bFont, bBrush, 290, 407);
+            fg.DrawString("Itterstraße 99, D-40589 Düsseldorf", bFont, bBrush, 285, 407);
             Thread.Sleep(time);
             fg.FillRectangle(wBrush, 282, 422, 266, 15);
 
-            fg.DrawString("______________________________", bFont, bBrush, 305, 422);
+            fg.DrawString("------------------------------", bFont, bBrush, 305, 422);
             Thread.Sleep(time);
 
             fg.FillRectangle(wBrush, 282, 437, 266, 15);
 
-            fg.DrawString("Telefonnummer: 0211/3983890", bFont, bBrush, 315, 437);
+            fg.DrawString("Telefonnummer: 0211/7453020", bFont, bBrush, 315, 437);
             Thread.Sleep(time);
 
             fg.FillRectangle(wBrush, 282, 452, 266, 15);
