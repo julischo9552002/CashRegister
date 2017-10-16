@@ -11,7 +11,7 @@ using System.Threading;
 using System.Media;
 
 namespace CashRegister
-    //Julia Scholz, 13th october 2017, cashregister for McDonald's in Germany
+    //Julia Scholz, 16 th october 2017, cash register for McDonald's in Germany
 {
     public partial class Form1 : Form
     {
